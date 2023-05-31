@@ -57,6 +57,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    EqsCameraService
+
 # AudioFX-Viper4Android-RE
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/ViperFX/audio_effects.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.xml \
