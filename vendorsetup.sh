@@ -34,8 +34,8 @@ if ! [ -a $VT ]; then git clone https://gitea.com/nishant6342/vendor_motorola_eq
 else
 cd vendor/motorola/eqs && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
-KT=device/motorola/eqs-kernel/kernel
-if ! [ -a $KT ]; then git clone --depth=1 https://github.com/nishant6342/device_motorola_eqs-kernel device/motorola/eqs-kernel
+KT=device/motorola/eqs-kernel
+if [ ! -d "$KT" ]; then git clone --depth=1 https://github.com/nishant6342/device_motorola_eqs-kernel device/motorola/eqs-kernel
 else
 cd device/motorola/eqs-kernel && git reset --hard HEAD && git pull;cd ../../..
 fi
