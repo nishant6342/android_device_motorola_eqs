@@ -5,7 +5,9 @@ if [ -n "${CLEAN_DT_REPOS}" ]; then
     if [ "$CLEAN_DT_REPOS" = "True" ]; then
         echo "Cleaning old repos before cloning"
         rm -rf device/motorola/sm8475-common
-        rm -rf device/motorola/eqs-kernel
+        rm -rf kernel/motorola/sm8475-modules
+        rm -rf kernel/motorola/sm8475-devicetrees
+        rm -rf kernel/motorola/sm8475
         rm -rf vendor/motorola
         rm -rf hardware/motorola
         unset CLEAN_DT_REPOS
@@ -34,10 +36,15 @@ if ! [ -a $VT ]; then git clone https://gitea.com/nishant6342/vendor_motorola_eq
 else
 cd vendor/motorola/eqs && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
-KT=device/motorola/eqs-kernel
-if [ ! -d "$KT" ]; then git clone --depth=1 https://github.com/nishant6342/device_motorola_eqs-kernel device/motorola/eqs-kernel
+KT=kernel/motorola/sm8475-modules
+if [ ! -d "$KT" ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475-modules -b lineage-21 kernel/motorola/sm8475-modules
 else
-cd device/motorola/eqs-kernel && git reset --hard HEAD && git pull;cd ../../..
+cd kernel/motorola/sm8475-modules && git reset --hard HEAD && git pull;cd ../../..
+fi
+KDT=kernel/motorola/sm8475-devicetrees
+if [ ! -d "$KDT" ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475-devicetrees -b lineage-21 kernel/motorola/sm8475-devicetrees
+else
+cd kernel/motorola/sm8475-devicetrees && git reset --hard HEAD && git pull;cd ../../..
 fi
 HARDWARE_MOTO=hardware/motorola/lineage.dependencies
 if ! [ -a $HARDWARE_MOTO ]; then git clone --depth=1 https://github.com/nishant6342/hardware_motorola -b UNO hardware/motorola
@@ -45,7 +52,7 @@ else
 cd hardware/motorola && git reset --hard HEAD && git pull;cd ../..
 fi
 KERNEL_SOURCE=kernel/motorola/sm8475/Makefile
-if ! [ -a $KERNEL_SOURCE ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475_old -b moto-rebase kernel/motorola/sm8475
+if ! [ -a $KERNEL_SOURCE ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475 -b lineage-21 kernel/motorola/sm8475
 fi
 echo eqs: end cloning device specific repos
 fi
