@@ -49,6 +49,8 @@ cd hardware/motorola && git reset --hard HEAD && git pull;cd ../..
 fi
 KERNEL_SOURCE=kernel/motorola/sm8475/Makefile
 if ! [ -a $KERNEL_SOURCE ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475 -b lineage-21 kernel/motorola/sm8475
+else
+cd kernel/motorola/sm8475 && git reset --hard HEAD && git pull;cd ../../..
 fi
 echo eqs: end cloning device specific repos
 fi
