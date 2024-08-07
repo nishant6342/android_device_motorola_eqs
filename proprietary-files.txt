@@ -419,9 +419,6 @@ vendor/firmware/st21nfc_fw.bin
 vendor/firmware/st21nfc_fw7.bin
 vendor/firmware/st54j_fw.bin
 
-# OEM
-vendor/etc/vhw.xml
-
 # Sensors
 vendor/lib64/libflatbuffers-cpp_vendor.so
 vendor/lib64/libruy_vendor.so
