@@ -389,6 +389,9 @@ vendor/firmware/st21nfc_fw7.bin
 vendor/firmware/st54j_fw.bin
 
 # Sensors
+vendor/bin/hw/motorola.hardware.sensorext-service
+vendor/etc/init/motorola.hardware.sensorext.service.rc
+vendor/etc/vintf/manifest/motorola.hardware.sensorext.service.xml
 vendor/lib64/libflatbuffers-cpp_vendor.so
 vendor/lib64/libruy_vendor.so
 vendor/lib64/libtextclassifier_hash_vendor.so
