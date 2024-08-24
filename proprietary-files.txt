@@ -370,8 +370,6 @@ product/etc/permissions/com.motorola.moto-uirefresh.xml
 vendor/bin/STFlashTool
 vendor/lib64/libstnfc-auth.so
 vendor/lib64/nfc_nci.st21nfc.st.so
-system_ext/lib64/libsn100nfc_nci_jni.so
-system_ext/lib64/libstnfc_nci_jni.so
 
 # NFC - configs
 vendor/etc/libnfc-hal-st.conf
