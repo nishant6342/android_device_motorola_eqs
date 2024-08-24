@@ -57,8 +57,10 @@ PRODUCT_PACKAGES += \
 
 # AudioFX-Viper4Android-RE
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/ViperFX/audio_effects.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.xml \
-    $(LOCAL_PATH)/prebuilt/lib64/soundfx/libv4a_re.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libv4a_re.so
+    $(LOCAL_PATH)/audio/ViperFX/audio_effects.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.xml
+
+PRODUCT_PACKAGES += \
+    libv4a_re
 
 # Fingerprint
 PRODUCT_PACKAGES += \
