@@ -66,6 +66,7 @@ product/etc/CarrierSettings/s20610.pb
 product/etc/CarrierSettings/s20610gid1_3d_bb00.pb
 product/etc/CarrierSettings/s20610spn_3d_be_2d_transatel.pb
 product/etc/CarrierSettings/s20610spn_3d_orange_20_b.pb
+product/etc/CarrierSettings/s20612.pb
 product/etc/CarrierSettings/s20620.pb
 product/etc/CarrierSettings/s20620gid1_3d_28.pb
 product/etc/CarrierSettings/s20628.pb
@@ -76,6 +77,8 @@ product/etc/CarrierSettings/s20801gid1_3d_33.pb
 product/etc/CarrierSettings/s20801gid1_3d_4e524a31.pb
 product/etc/CarrierSettings/s20801gid1_3d_52.pb
 product/etc/CarrierSettings/s20801imsi_3d_208011511.pb
+product/etc/CarrierSettings/s20801imsi_3d_20801156.pb
+product/etc/CarrierSettings/s20801imsi_3d_20801157.pb
 product/etc/CarrierSettings/s20801spn_3d_rakuten.pb
 product/etc/CarrierSettings/s20801spn_3d_virgin.pb
 product/etc/CarrierSettings/s20802.pb
@@ -504,6 +507,7 @@ product/etc/CarrierSettings/s24215gid1_3d_0e.pb
 product/etc/CarrierSettings/s24403.pb
 product/etc/CarrierSettings/s24404.pb
 product/etc/CarrierSettings/s24405.pb
+product/etc/CarrierSettings/s24405imsi_3d_2440541.pb
 product/etc/CarrierSettings/s24410.pb
 product/etc/CarrierSettings/s24412.pb
 product/etc/CarrierSettings/s24413.pb
@@ -705,6 +709,8 @@ product/etc/CarrierSettings/s26212.pb
 product/etc/CarrierSettings/s26214.pb
 product/etc/CarrierSettings/s26221.pb
 product/etc/CarrierSettings/s26223.pb
+product/etc/CarrierSettings/s26223imsi_3d_20801156.pb
+product/etc/CarrierSettings/s26223imsi_3d_20801157.pb
 product/etc/CarrierSettings/s26242.pb
 product/etc/CarrierSettings/s26277.pb
 product/etc/CarrierSettings/s262800.pb
