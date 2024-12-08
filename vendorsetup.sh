@@ -52,5 +52,10 @@ if ! [ -a $KERNEL_SOURCE ]; then git clone --depth=1 https://github.com/nishant6
 else
 cd kernel/motorola/sm8475 && git reset --hard HEAD && git pull;cd ../../..
 fi
+POCKET_MODE=packages/apps/PocketMode/Android.mk
+if ! [ -a $POCKET_MODE ]; then git clone https://github.com/nishant6342/packages_apps_PocketMode -b UNO packages/apps/PocketMode
+else
+cd packages/apps/PocketMode && git reset --hard HEAD && git pull;cd ../../..
+fi
 echo eqs: end cloning device specific repos
 fi
