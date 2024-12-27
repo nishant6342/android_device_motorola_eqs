@@ -55,10 +55,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     EqsCameraService
 
-# AudioFX-Viper4Android-RE
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/ViperFX/audio_effects.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.xml
-
 PRODUCT_PACKAGES += \
     libv4a_re
 
