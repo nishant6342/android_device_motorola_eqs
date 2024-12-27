@@ -1,24 +1,22 @@
 #!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
 #
-# Copyright (C) 2024 The LineageOS Project
-#
+# SPDX-FileCopyrightText: 2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
+from extract_utils.extract import extract_fns_user_type
+from extract_utils.extract_star import (
+    extract_star_firmware,
+    star_firmware_regex,
+)
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
+from extract_utils.fixups_lib import lib_fixups
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
-)
-
-from extract_utils.fixups_blob import (
-    blob_fixups_user_type,
-    blob_fixup,
-)
-
-from extract_utils.fixups_lib import (
-    lib_fixups_user_type,
-    lib_fixup_vendorcompat,
-    libs_proto_3_9_1,
 )
 
 namespace_imports = [
@@ -34,8 +32,8 @@ blob_fixups: blob_fixups_user_type = {
     ),
 }
 
-lib_fixups: lib_fixups_user_type = {
-    libs_proto_3_9_1: lib_fixup_vendorcompat,
+extract_fns: extract_fns_user_type = {
+    star_firmware_regex: extract_star_firmware,
 }
 
 module = ExtractUtilsModule(
@@ -46,7 +44,7 @@ module = ExtractUtilsModule(
     namespace_imports=namespace_imports,
     add_generated_carriersettings=True,
     add_firmware_proprietary_file=True,
-    check_elf=True,
+    extract_fns=extract_fns,
 )
 
 if __name__ == '__main__':
