@@ -28,7 +28,9 @@ else
 cd vendor/motorola/sm8475-common && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
 VT=vendor/motorola/eqs/eqs-vendor.mk
-if ! [ -a $VT ]; then git clone https://gitea.com/nishant6342/vendor_motorola_eqs -b VANY vendor/motorola/eqs
+if ! [ -a $VT ]; then
+git clone https://gitlab.com/projectelixiros/vendor_motorola_eqs -b vany vendor/motorola/eqs
+cd vendor/motorola/eqs && git lfs pull && cd ../../..
 else
 cd vendor/motorola/eqs && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
