@@ -32,6 +32,9 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Inherit from motorola sm8475-common
 $(call inherit-product, device/motorola/sm8475-common/sm8475.mk)
 
+# Pocket Mode
+$(call inherit-product-if-exists, packages/apps/PocketMode/pocket_mode.mk)
+
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResEqs \
