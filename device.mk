@@ -59,6 +59,7 @@ PRODUCT_PACKAGES += \
     EqsCameraService
 
 PRODUCT_PACKAGES += \
+    ViperFX-RE \
     libv4a_re
 
 # Fingerprint
