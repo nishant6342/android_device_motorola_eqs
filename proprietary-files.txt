@@ -337,7 +337,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # MotoChekin
 system/etc/permissions/moto-checkin.xml
--system/framework/moto-checkin.jar
+system/framework/moto-checkin.jar
 
 # MotCamera3
 product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
@@ -469,7 +469,6 @@ vendor/etc/sensors/config/waipio_power_0.json
 vendor/etc/sensors/sns_reg_config
 
 # Thermal engine - configs
-vendor/etc/thermal-engine-eqs.conf
 vendor/etc/thermal-engine.conf
 
 # Touchscreen firmware
