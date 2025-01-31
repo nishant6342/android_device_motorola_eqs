@@ -38,7 +38,6 @@ $(call inherit-product-if-exists, packages/apps/PocketMode/pocket_mode.mk)
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResEqs \
-    SettingsProviderResEqs \
     SettingsElixirOverlay \
     SystemUIResEqs
 
