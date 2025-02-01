@@ -1,5 +1,5 @@
-device/motorola
-vendor/motorola
-kernel/motorola
-hardware/motorola
-hardware/qcom-caf/sm8450/display
+device/motorola/
+vendor/motorola/
+kernel/motorola 
+hardware/motorola/
+packages/apps/PocketMode
