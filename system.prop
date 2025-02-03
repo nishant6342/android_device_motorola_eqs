@@ -1,3 +1,6 @@
 # Google
 ro.opa.device_model_id=motorola-eqs
 ro.opa.eligible_device=true
+
+# Oem Unlock
+ro.oem_unlock_supported=1
