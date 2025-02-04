@@ -3,10 +3,26 @@ android_app_import {
         apk: "ViperFX-RE.apk",
         presigned: true,
         dex_preopt: {
-                enabled: false,
+            enabled: false,
         },
         overrides: [
              "AudioFX",
+        ],
+        preprocessed: true,
+}
+
+android_app_import {
+        name: "MotoGallery",
+        apk: "MotoGallery.apk",
+        presigned: true,
+        dex_preopt: {
+            enabled: false,
+        },
+        overrides: [
+            "Gallery",
+            "Gallery3D",
+            "GalleryNew3D",
+            "Glimpse",
         ],
         preprocessed: true,
 }
