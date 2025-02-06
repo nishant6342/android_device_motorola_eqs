@@ -35,12 +35,12 @@ else
 cd vendor/motorola/eqs && git reset --hard HEAD~1 && git pull;cd ../../..
 fi
 KT=kernel/motorola/sm8475-modules
-if [ ! -d "$KT" ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475-modules -b lineage-22.1 kernel/motorola/sm8475-modules
+if [ ! -d "$KT" ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475-modules -b lineage-22.1-rebase kernel/motorola/sm8475-modules
 else
 cd kernel/motorola/sm8475-modules && git reset --hard HEAD && git pull;cd ../../..
 fi
 KDT=kernel/motorola/sm8475-devicetrees
-if [ ! -d "$KDT" ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475-devicetrees -b lineage-21 kernel/motorola/sm8475-devicetrees
+if [ ! -d "$KDT" ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475-devicetrees -b lineage-22.1-rebase kernel/motorola/sm8475-devicetrees
 else
 cd kernel/motorola/sm8475-devicetrees && git reset --hard HEAD && git pull;cd ../../..
 fi
@@ -50,7 +50,7 @@ else
 cd hardware/motorola && git reset --hard HEAD && git pull;cd ../..
 fi
 KERNEL_SOURCE=kernel/motorola/sm8475/Makefile
-if ! [ -a $KERNEL_SOURCE ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475 -b lineage-21 kernel/motorola/sm8475
+if ! [ -a $KERNEL_SOURCE ]; then git clone --depth=1 https://github.com/nishant6342/android_kernel_motorola_sm8475 -b lineage-22.1-rebase kernel/motorola/sm8475
 else
 cd kernel/motorola/sm8475 && git reset --hard HEAD && git pull;cd ../../..
 fi
